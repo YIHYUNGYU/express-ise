@@ -3,9 +3,9 @@ import { PostService } from '../services';
 
 class PostController {
   private postService = new PostService();
-  public createUser = async (req: Request, res: Response) => {
-    const hello = this.postService.createUser();
-    res.json({ word: hello });
+  public getPosts = async (req: Request, res: Response) => {
+    const hello = await this.postService.getPosts();
+    res.json({ hello });
   };
 }
 

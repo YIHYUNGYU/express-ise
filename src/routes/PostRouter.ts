@@ -11,7 +11,7 @@ class PostRoute {
   }
 
   public initializeRoute() {
-    this.router.get('/', this.postController.createUser);
+    this.router.get('/', this.postController.getPosts);
   }
 }
 
